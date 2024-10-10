@@ -1,4 +1,3 @@
-/* General */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -8,46 +7,323 @@ body {
 
 header {
     background-color: #d6c5b1;
-    padding: 20px 0;
+    padding: 0px;
     text-align: center;
 }
+
+nav {
+    background-color: #f3f3ea; 
+    padding: 1em 0;
+    border-top: #6c5c54 2px solid;
+    border-bottom:  #6c5c54 2px solid;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a38372; 
+    color: #fff; 
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el diseño a vertical en móviles */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espaciado vertical en móvil */
+    }
+}
+
 
 .logo img {
     max-width: 150px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-}
 
-nav ul li {
-    margin: 0 15px;
+h1{
+    color: #222c30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #625b51;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
+p{
+    color: #222c30;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
-nav ul li a:hover {
-    background-color: #4a4135;
+h2{
+    color: #222c30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
 main {
-    padding: 40px 20px;
+    padding: 5px;
     text-align: center;
+    background-color: #d6c5b1
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.Bienvenidos {
+    background-color: #f3f3ea;
+    padding: 0.5em 1em;
+    text-align: center;
+    margin-top: 1em; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.Bienvenidos h2 {
+    color: #222c30; 
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-decoration:underline dotted;
+}
+
+.Bienvenidos p {
+    font-size: 1.2em;
+    color: #222c30;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 3em;
+}
+
+.Bienvenidos button {
+    background-color: #8bb28d; 
+    color: #f3f3ea;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 5em;
+}
+
+.Bienvenidos button:hover {
+    background-color: #805a4f; 
+}
+
+@media (max-width: 768px) {
+    .Bienvenidos h2 {
+        font-size: 2em;
+    }
+
+    .Bienvenidos p {
+        font-size: 1.1em;
+    }
+
+    .Bienvenidos button {
+        font-size: 1em;
+        padding: 0.7em 1.2em;
+    }
+}
+
+.Proyecto {
+    background-color: #f3f3ea; 
+    padding: 0.5em 1em;
+    text-align: center;
+    margin-top: 2em; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.proyecto-texto{
+    flex: 1;
+    padding-right: 2em;
+}
+
+.proyecto-imagen{
+    flex: 1;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.proyecto-imagen img{
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Proyecto h2 {
+    color: #222c30; 
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.Proyecto p {
+    font-size: 1.2em;
+    color: #222c30;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 3em;
+    text-align: left;
+}
+
+.Proyecto button {
+    background-color: #8bb28d;
+    color: #f3f3ea;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Proyecto button:hover {
+    background-color: #805a4f; 
+}
+
+@media (max-width: 768px) {
+    .Proyecto{
+        flex-direction: column;
+        text-align: center;
+    }
+    .proyecto-texto{
+        padding-right: 0;
+    }
+    .proyecto-imagen{
+        margin-top: 1.5em;
+    }
+    .Proyecto h2 {
+        font-size: 2em;
+    }
+
+    .Proyecto p {
+        font-size: 1.1em;
+    }
+
+    .Proyecto button {
+        font-size: 1em;
+        padding: 0.7em 1.2em;
+    }
+}
+
+.actividades{
+    background-color: #f3f3ea;
+    padding: 0.5em 1em;
+    text-align: center;
+    margin-top: 2em; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actividades-texto{
+    flex: 1;
+    padding-right: 2em;
+}
+
+.actividades-imagen{
+    flex: 1;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.actividades-imagen img{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.actividades h2 {
+    color: #222c30; 
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.actividades p {
+    font-size: 1.2em;
+    color: #222c30;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 3em;
+    text-align: left;
+}
+
+.actividades button {
+    background-color: #8bb28d;
+    color: #f3f3ea;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actividades button:hover {
+    background-color: #805a4f; 
+}
+
+@media (max-width: 768px) {
+    .actividades{
+        flex-direction: column;
+        text-align: center;
+    }
+    .actividades-texto{
+        padding-right: 0;
+    }
+    .actividades-imagen{
+        margin-top: 1.5em;
+    }
+    .actividades h2 {
+        font-size: 2em;
+    }
+
+    .actividades p {
+        font-size: 1.1em;
+    }
+
+    .actividades button {
+        font-size: 1em;
+        padding: 0.7em 1.2em;
+    }
+}
+
+.Bienvenidos label {
+    font-size: 1.2em;
+    color: #222c30;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 3em;
 }
 
 footer {
@@ -57,34 +333,3 @@ footer {
     padding: 10px 0;
 }
 
-/* Efectos en el menú */
-.menu li a {
-    position: relative;
-    overflow: hidden;
-}
-
-.menu li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #ff6347;
-    bottom: 0;
-    left: -100%;
-    transition: left 0.3s;
-}
-
-.menu li a:hover::after {
-    left: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
