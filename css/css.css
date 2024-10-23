@@ -1,49 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
+/* estilo cabecera */
 header {
-    background-color: #d6c5b1;
-    padding: 0px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ae937b;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
 }
+
 
 nav {
-    background-color: #f3f3ea; 
-    padding: 1em 0;
-    border-top: #6c5c54 2px solid;
-    border-bottom:  #6c5c54 2px solid;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-nav ul {
+/* Los puntos del menu*/
+.menu {
+    flex: 2;
+    display:flex;
+    justify-content: center;
     list-style: none;
-    display: flex;
-    justify-content: center; 
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-
-nav ul li {
-    margin: 0 15px; 
-}
-
-nav ul li a {
+.menu li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700; /* Ajusta el peso según lo necesites */
+    color: #333; /* Cambia el color según tu diseño */
+    font-size: 25px;
     text-decoration: none;
-    color: #333; 
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #a38372; 
-    color: #fff; 
+.nav li a:hover {
+    color: #007BFF; /* Cambia el color al pasar el ratón */
+    background-color: black;
 }
+nav li {
+    margin: 0 auto;
+    display: inline-block;
+    list-style: none;
+    padding: 0; 
+}
+
+
+/* el logo */
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 70%;
+    height: auto;
+}
+/* Redes Sociales*/
+  
+/* Fin Redes Sociales*/
+
+
+/* Boton de busqueda*/
+*{
+    box-sizing: border-box;
+  }
+
+
+.search-box{
+    flex: 1;
+    display:flex;
+    justify-content: flex-end;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #a38372; 
+    padding-right: 40px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+  /* Fin de boton de busqueda*/
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -56,10 +147,6 @@ nav ul li a:hover {
     }
 }
 
-
-.logo img {
-    max-width: 150px;
-}
 
 
 h1{
