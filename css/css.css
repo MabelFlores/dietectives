@@ -3,18 +3,34 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #d5c4b0;
 }
 
 /* estilo cabecera */
 header {
     display: flex;
     justify-content: center;
-    background-color: #ae937b;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
+    position: relative;
+    background-color: #ae937b;
     top: 0;
     transition: background-color 0.3s ease;
+    border-radius: 0 0 25px 25px;
+    
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/pattern2.png");
+    background-repeat: repeat;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: 0;
 }
 
 
@@ -23,48 +39,190 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece el margen */
 }
 
 /* Los puntos del menu*/
 .menu {
     flex: 2;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu li a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700; /* Ajusta el peso según lo necesites */
-    color: #333; /* Cambia el color según tu diseño */
-    font-size: 25px;
-    text-decoration: none;
+
+.menu li {
+    margin: 0; /* Asegúrate de que no haya margen adicional */
+    padding: 0;
 }
 
-.nav li a:hover {
-    color: #007BFF; /* Cambia el color al pasar el ratón */
-    background-color: black;
+.menu li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 450; /* Ajusta el peso según lo necesites */
+    color: #e2e2dd; /* Cambia el color según tu diseño */
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #222c30;
+    padding: 40px 15px; /* Añadir padding para hacer que el área del enlace sea más grande */
+    border-radius: 5px; /* Opcional: redondear los bordes de los elementos del menú */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* Transición suave */
+}
+
+.menu li a:hover {
+    background-color: #8bb28d; /* Cambia el color de fondo al pasar el ratón */
+    color: #222c30; /* Cambia el color del texto al pasar el ratón */
+    text-shadow: 1px 1px 2px #e2e2dd;
+    transform: scale(5.1);
+
 }
 nav li {
-    margin: 0 auto;
-    display: inline-block;
     list-style: none;
-    padding: 0; 
+    padding: 0;
 }
 
 
 /* el logo */
-.logo {
-    flex: 1;
+
+.logo-container {
+    text-align: center; /* O usar display: flex y justify-content: center */
 }
 
-.logo img {
-    width: 70%;
+.logo-container img {
+    max-width: 60%;
     height: auto;
+    transition: transform 0.6s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+.search-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
 }
 /* Redes Sociales*/
-  
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    margin-top: 8px; /* Espacio entre el buscador y los botones de redes sociales */
+    margin-bottom: 5px;
+}
+
+.social-buttons ul {
+    margin: 0; /* Eliminar margen para centrar correctamente */
+    padding: 0; /* Eliminar padding */
+    display: flex; /* Usar flexbox para alinear los elementos horizontalmente */
+}
+
+.social-buttons ul li {
+    list-style: none; /* Eliminar el estilo de lista */
+}
+
+.social-buttons ul li a {
+    display: block;
+    position: relative;
+    width: 60px; /* Puedes ajustar el tamaño según lo necesites */
+    height: 60px; /* Puedes ajustar el tamaño según lo necesites */
+    line-height: 60px; /* Centra el icono verticalmente */
+    font-size: 20px; /* Tamaño del icono */
+    text-align: center;
+    text-decoration: none;
+    color: #404040; /* Color del icono */
+    margin: 0 30px; /* Espacio entre botones */
+    transition: .5s;
+}
+
+.social-buttons ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+.social-buttons ul li a span:nth-child(1),
+.social-buttons ul li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: #404040; /* Color de las líneas */
+}
+
+.social-buttons ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.social-buttons ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.social-buttons ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.social-buttons ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.social-buttons ul li a span:nth-child(2),
+.social-buttons ul li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: #404040; /* Color de las líneas verticales */
+}
+
+.social-buttons ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+
+.social-buttons ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+.social-buttons ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.social-buttons ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.instagram:hover {
+    color: #c32aa3; /* Color de la red social */
+}
+
+.instagram:hover span { 
+    background: #c32aa3; /* Color de fondo en hover */
+}
+
+.envelope:hover {
+    color: #dd4b39; /* Color de la red social */
+}
+
+.envelope:hover span { 
+    background: #dd4b39; /* Color de fondo en hover */
+}
 /* Fin Redes Sociales*/
 
 
@@ -77,6 +235,7 @@ nav li {
 .search-box{
     flex: 1;
     display:flex;
+    align-items: center;
     justify-content: flex-end;
     width: fit-content;
     height: fit-content;
@@ -115,9 +274,14 @@ nav li {
     position: absolute;
     right: 0px;
     color:#ffffff ;
+    text-shadow: 1px 1px 2px #222c30;
     background-color:transparent;
     pointer-events: painted;  
   }
+
+  .btn-search:hover {
+    background-color: #8bb28d; /* Cambia el color de fondo al pasar el ratón */
+}
   .btn-search:focus ~ .input-search{
     width: 300px;
     border-radius: 0px;
