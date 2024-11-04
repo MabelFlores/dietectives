@@ -16,7 +16,6 @@ header {
     background-color: #ae937b;
     top: 0;
     transition: background-color 0.3s ease;
-    border-radius: 0 0 25px 25px;
     
 }
 header::before {
@@ -577,10 +576,138 @@ section {
     margin-top: 3em;
 }
 
+
+
+
+.hero-about-us {
+    background-color:#465947 ;
+    color: #f3f3ea;
+    text-align: center;
+    padding: 30px 20px;
+}
+.hero-about-us p,h1{
+    color: #f3f3ea;
+}
+
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f3f3ea;
+    border-radius: 10px;
+}
+.about-us p {
+    font-size: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.team {
+    background-color: #e9e9e9;
+    padding: 40px 20px;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.team-member img {
+    width: 180px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.hero-activity {
+    background-color:#465947 ;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+.hero-activity p, h1{
+    color: #f3f3ea;
+}
+.activities-history {
+    padding: 40px 20px;
+    background-color: #f3f3ea;
+    max-width: 1800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.activities-history h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.activity {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity-date {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    background-color: #8bb28d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+.activity-content {
+    flex: 3;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.activity-content h3 {
+    color: #465947;
+    margin-bottom: 10px;
+}
+
+.activity-content p {
+    margin-bottom: 15px;
+}
+
+.activity img {
+    max-width: 23%;
+    height: auto;
+    border-radius: 8px;
+}
+
 footer {
     background-color: #625b51;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+footer p{
+    color: #fff;
 }
 
