@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+/* Añadir .container como prefijo a los estilos */
+.container {
+  position: relative; /* Cambiar a relative para que los hijos se posicionen correctamente */
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+
+    .card {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform .4s ease;
+      cursor: pointer;
+      opacity: 0;  // Comenzamos con opacidad 0
+      transform: translateX(-40%); // Ajustar para que se vea el efecto
+
+      // Efectos de transformación al seleccionar las tarjetas
+      #item-1:checked ~ .card#song-1 {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+
+      #item-2:checked ~ .card#song-2 {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+
+      #item-3:checked ~ .card#song-3 {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+
+      #item-1:checked ~ .card#song-2,
+      #item-1:checked ~ .card#song-3,
+      #item-2:checked ~ .card#song-1,
+      #item-2:checked ~ .card#song-3,
+      #item-3:checked ~ .card#song-1,
+      #item-3:checked ~ .card#song-2 {
+        transform: translateX(-40%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .message {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

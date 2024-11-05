@@ -299,30 +299,23 @@ nav li {
   /* Fin de boton de busqueda*/
 
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Cambia el diseño a vertical en móviles */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px; /* Espaciado vertical en móvil */
-    }
-}
-
-
-
 h1{
     color: #222c30;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 p{
     color: #222c30;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Josefin Sans', sans-serif;
 }
 h2{
     color: #222c30;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Josefin Sans', sans-serif;
 }
 main {
     padding: 5px;
@@ -334,310 +327,163 @@ section {
     margin-bottom: 20px;
 }
 
-.Bienvenidos {
-    background-color: #f3f3ea;
-    padding: 0.5em 1em;
-    text-align: center;
-    margin-top: 1em; 
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-}
+/*index*/
 
-.Bienvenidos h2 {
-    color: #222c30; 
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    text-decoration:underline dotted;
-}
-
-.Bienvenidos p {
-    font-size: 1.2em;
-    color: #222c30;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    line-height: 1.6;
-    text-align: justify;
-    margin-top: 3em;
-}
-
-.Bienvenidos button {
-    background-color: #8bb28d; 
+.seccion1 {
+    background-color:#8bb28d ;
     color: #f3f3ea;
-    padding: 0.8em 1.5em;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    margin-top: 3em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 5em;
-}
-
-.Bienvenidos button:hover {
-    background-color: #805a4f; 
-}
-
-@media (max-width: 768px) {
-    .Bienvenidos h2 {
-        font-size: 2em;
-    }
-
-    .Bienvenidos p {
-        font-size: 1.1em;
-    }
-
-    .Bienvenidos button {
-        font-size: 1em;
-        padding: 0.7em 1.2em;
-    }
-}
-
-.Proyecto {
-    background-color: #f3f3ea; 
-    padding: 0.5em 1em;
     text-align: center;
-    margin-top: 2em; 
+    padding: 20px 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.proyecto-texto{
-    flex: 1;
-    padding-right: 2em;
-}
-
-.proyecto-imagen{
-    flex: 1;
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
-.proyecto-imagen img{
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.Proyecto h2 {
-    color: #222c30; 
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    margin-top: 2em;
-}
-
-.Proyecto p {
-    font-size: 1.2em;
-    color: #222c30;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    margin-bottom: 3em;
-    text-align: left;
-}
-
-.Proyecto button {
-    background-color: #8bb28d;
-    color: #f3f3ea;
-    padding: 0.8em 1.5em;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1.5em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.Proyecto button:hover {
-    background-color: #805a4f; 
-}
-
-@media (max-width: 768px) {
-    .Proyecto{
-        flex-direction: column;
-        text-align: center;
-    }
-    .proyecto-texto{
-        padding-right: 0;
-    }
-    .proyecto-imagen{
-        margin-top: 1.5em;
-    }
-    .Proyecto h2 {
-        font-size: 2em;
-    }
-
-    .Proyecto p {
-        font-size: 1.1em;
-    }
-
-    .Proyecto button {
-        font-size: 1em;
-        padding: 0.7em 1.2em;
-    }
-}
-
-.actividades{
-    background-color: #f3f3ea;
-    padding: 0.5em 1em;
-    text-align: center;
-    margin-top: 2em; 
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.actividades-texto{
-    flex: 1;
-    padding-right: 2em;
-}
-
-.actividades-imagen{
-    flex: 1;
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
-.actividades-imagen img{
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.actividades h2 {
-    color: #222c30; 
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    margin-top: 2em;
-}
-
-.actividades p {
-    font-size: 1.2em;
-    color: #222c30;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    margin-bottom: 3em;
-    text-align: left;
-}
-
-.actividades button {
-    background-color: #8bb28d;
-    color: #f3f3ea;
-    padding: 0.8em 1.5em;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1.5em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.actividades button:hover {
-    background-color: #805a4f; 
-}
-
-@media (max-width: 768px) {
-    .actividades{
-        flex-direction: column;
-        text-align: center;
-    }
-    .actividades-texto{
-        padding-right: 0;
-    }
-    .actividades-imagen{
-        margin-top: 1.5em;
-    }
-    .actividades h2 {
-        font-size: 2em;
-    }
-
-    .actividades p {
-        font-size: 1.1em;
-    }
-
-    .actividades button {
-        font-size: 1em;
-        padding: 0.7em 1.2em;
-    }
-}
-
-.Bienvenidos label {
-    font-size: 1.2em;
-    color: #222c30;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    line-height: 1.6;
-    text-align: left;
-    margin-top: 3em;
+.seccion1 .index1 img{
+    width: 500px;
+    height: 300px;
 }
 
 
+/* quienessomos*/
 
 
 .hero-about-us {
-    background-color:#465947 ;
+    background-color:#8bb28d ;
     color: #f3f3ea;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
 }
 .hero-about-us p,h1{
     color: #f3f3ea;
 }
+.hero-about-us h1{
+    font-size: 30px;
+}
+
+.hero-about-us p{
+    font-size: 18px;
+}
 
 .about-us {
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     background-color: #f3f3ea;
     border-radius: 10px;
 }
+
+.about-us h2 {
+    font-size: 30px;
+}
 .about-us p {
-    font-size: 1em;
-    max-width: 800px;
+    font-size: 18px;
+    max-width: 1000px;
     margin: 0 auto;
     line-height: 1.6;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
 .team {
-    background-color: #e9e9e9;
-    padding: 40px 20px;
-}
-
-.team h2 {
+    background-color: #abd6ad;
+    color: #f3f3ea;
     text-align: center;
-    margin-bottom: 30px;
+    padding: 10px 0px; /* Reduce el padding superior e inferior */
+    border-radius: 10px;
+
 }
 
-.team-members {
+.team h3 {
+    font-size: 20px;
+    color: #494949;
+    padding-bottom: 0px;
+}
+.slider{
+    
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+    padding: 0;
+}
+.slider .list{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: calc(300px * 6);
+    position: relative;
+}
+.slider .list .item{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 100%;
+    animation: autoRun 25s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc( (25s / var(--quantity)) * (var(--position) - 1) - 25s)!important;
+    
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    padding: 0; /* Asegúrate de que no haya padding */
+    display: flex; /* Usar flex para centrar el contenido */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: center; /* Centrar el contenido verticalmente */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    
+}
+.slider .list .item img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto; /* Asegúrate de que las imágenes se ajusten sin causar espacio extra */
+    display: block; /* Esto elimina el espacio en la parte inferior de las imágenes */
 }
 
-.team-member {
-    background: #fff;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Oculta la leyenda de forma predeterminada */
+.slider .list .item .caption {
+    display: none;
+    position: relative;
+    font-family:'Josefin Sans', sans-serif;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff;
+    padding: 5px;
     text-align: center;
-    width: 30%;
+    font-size: 0.9em;
 }
 
-.team-member img {
-    width: 180px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+/* Muestra la leyenda al pasar el ratón sobre el `.item` */
+.slider .list .item:hover .caption {
+    display: block;
+}
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+}
+.slider:hover .item{
+    animation-play-state: paused!important;
+    filter: grayscale(1);
+}
+.slider .item:hover{
+    filter: grayscale(0);
+}
+.slider[reverse="true"] .item{
+    animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay{
+    from{
+        left: calc(var(--width) * -1);
+    }to{
+        left: 100%;
+    }
 }
 
-
+/*actividades*/
 .hero-activity {
     background-color:#465947 ;
     color: white;
@@ -700,7 +546,7 @@ section {
     height: auto;
     border-radius: 8px;
 }
-
+/*contacto*/
 .hero-contact {
     background-color:#465947 ;
     color: white;
@@ -790,6 +636,7 @@ section {
     background-color: #2980B9;
 }
 
+/*proyecto sanum*/
 .hero-project {
     background-color:#465947 ;
     color: #f3f3ea;
@@ -873,6 +720,10 @@ section {
     border-radius: 8px;
     margin-top: 30px;
 }
+
+
+/*footer*/
+
 footer {
     background-color: #625b51;
     color: #fff;
