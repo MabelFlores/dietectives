@@ -318,7 +318,6 @@ h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 main {
-    padding: 5px;
     text-align: center;
     background-color: #d6c5b1
 }
@@ -334,7 +333,6 @@ section {
     color: #f3f3ea;
     text-align: center;
     padding: 20px 10px;
-    border-radius: 10px;
 }
 .seccion1 .index1 img{
     width: 500px;
@@ -368,6 +366,7 @@ section {
     text-align: center;
     background-color: #f3f3ea;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .about-us h2 {
@@ -388,6 +387,7 @@ section {
     text-align: center;
     padding: 10px 0px; /* Reduce el padding superior e inferior */
     border-radius: 10px;
+    margin: 0;
 
 }
 
@@ -488,8 +488,9 @@ section {
     background-color:#465947 ;
     color: white;
     text-align: center;
-    padding: 50px 20px;
-    
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
 }
 .hero-activity p, h1{
     color: #f3f3ea;
@@ -497,9 +498,9 @@ section {
 .activities-history {
     padding: 40px 20px;
     background-color: #f3f3ea;
-    max-width: 1800px;
+    max-width: 1850px;
     margin: 0 auto;
-    border-radius: 10px;
+    margin-bottom: 0px;
 }
 
 .activities-history h2 {
@@ -514,6 +515,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .activity-date {
@@ -551,10 +553,13 @@ section {
     background-color:#465947 ;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
 }
 .hero-contact p, h1{
     color: #f3f3ea;
+    
 }
 
 .contact-details {
@@ -563,7 +568,7 @@ section {
     max-width: 100%;
     margin: 0;
     text-align: center;
-    border-radius: 10px;
+    font-size: 20px;
 }
 
 .contact-details h2 {
@@ -574,7 +579,7 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .contact-info div {
@@ -590,10 +595,11 @@ section {
 .contact-form {
     background-color: #f3f3ea;
     padding: 40px 20px;
-    max-width: 80%;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    height: 700px;
+    margin: 0px auto;
+    border-top:#3498DB solid 1px;
+
 }
 
 .contact-form h2 {
@@ -610,6 +616,7 @@ section {
 .contact-form label {
     margin-bottom: 10px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -641,7 +648,9 @@ section {
     background-color:#465947 ;
     color: #f3f3ea;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
 }
 .hero-project p,h1{
     color: #f3f3ea;
@@ -651,18 +660,26 @@ section {
 .project-intro {
     padding: 40px 20px;
     text-align: justify;
-    background-color: #fff;
+    background-color: #f3f3ea;
     max-width:  100%;
     margin: 0 auto;
+    font-size: 20px;
 
+}
+.project-intro p,h2{
+    color:#3f3b36;
+    margin: 50px;
 }
 
 .project-goals {
     padding: 40px 20px;
-    background-color: #f8f8f8;
+    background-color: #d3c4b3;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    font-size: 25px;
+    color:#1C1A18;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .project-goals ul {
@@ -671,15 +688,23 @@ section {
 
 .project-goals li {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 20px;
+    color:#1C1A18;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .project-stages {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #ad957c;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    font-size: 20px;
+}
+
+.project-stages h2 {
+    color:#2D2828;
 }
 
 .stages {
@@ -698,14 +723,19 @@ section {
 }
 
 .stage h3 {
-    color: #27AE60;
+    color: #367f3b;
     margin-bottom: 10px;
+}
+.stage {
+    color: #3f3b36;
+
 }
 
 .project-gallery {
     padding: 40px 20px;
-    background-color: #f8f8f8;
+    background-color: #f3f3ea;
     text-align: center;
+    margin: 0;
 }
 
 .gallery {
