@@ -323,21 +323,153 @@ main {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /*index*/
 
-.seccion1 {
-    background-color:#8bb28d ;
-    color: #f3f3ea;
+@keyframes ColorEnMovimiento
+{
+0%   {color: #FFDDAC;}
+20%  {color: #71624D; }
+40%  {color: #FFDDAC; }
+60%  {color: #83C986; }
+80%  {color: #374738;}
+100% {color: #83C986;}
+}
+.portada {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    animation:ColorEnMovimiento linear infinite 4s;
+    color: #E7F2D5;
+}
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#inicio{
+    height: 550px;
+    background: url(../img/dieta2.png) no-repeat center;
+    background-size: cover;
+}
+
+.titulo {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+.titulo2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: boled;
+    text-transform: uppercase;
+    color:#000000;
+}
+#blanco {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#texto2 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #000000;
+    padding: 0 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texto {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 0 100px;
+    font-family:'Josefin Sans', 'sans-serif';
+
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #374738;
+    color: #000000;
+    text-decoration: none;
+    background: #C7D989;
+    border-radius: 20px;
+    font-family:'Josefin Sans', 'sans-serif';
+    color: #000000;
+}
+
+.boton:hover {
+    background: none;
+    filter: blur(0.8px);
+    
+}
+
+.contenido {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    padding: 30px;
+    background:  #E7F2D5;
+}
+
+.cajas {
+    display: flex;
     text-align: center;
-    padding: 20px 10px;
 }
-.seccion1 .index1 img{
-    width: 500px;
-    height: 300px;
+
+.cajas .box {
+    height: 180px;
+    width: 280px;
+    background: #5A7302;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 80px rgba(1, 1 , 1, 1.5);
+    margin: 30px;   
 }
+
+.cajas .box h3 {
+    font-size: 20px;
+    color: #83C986;
+
+}
+
+#información {
+    background: #C7D989;
+}
+
+#nosotros {
+    background: url(../img/dieta1.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+#contacto {
+    padding-top: 20px;
+    background: #E7F2D5;
+    padding-bottom: 0;
+}
+
 
 
 /* quienessomos*/
