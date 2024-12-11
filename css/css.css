@@ -297,6 +297,106 @@ nav li {
   }
 
   /* Fin de boton de busqueda*/
+  @media (max-width: 768px) {
+    /* Cabecera */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    /* Logo alineado a la izquierda */
+    .logo-container {
+        order: -1;
+        align-self: center;
+        padding: 10px 20px;
+    }
+
+    .logo-container img {
+        max-width: 130px; /* Tamaño ajustado para pantallas pequeñas */
+    }
+
+    /* Menú en dos filas */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Espacio entre los elementos del menú */
+    }
+
+    .menu li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 16px; /* Ajuste del tamaño de texto para pantallas pequeñas */
+    }
+
+    /* Redes sociales y buscador a la derecha */
+    .search-social {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+
+    .search-box {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .social-buttons {
+        margin: 0;
+        flex: 1;
+        align-items: left;
+        margin: 0
+    }
+
+    .social-buttons ul {
+        justify-content: flex-end;
+
+    }
+
+    .social-buttons ul li {
+        margin: 0 2px; /* Espaciado más pequeño para pantallas pequeñas */
+    }
+    .social-buttons ul li a {
+        width: 30px; /* Puedes ajustar el tamaño según lo necesites */
+        height: 30px; /* Puedes ajustar el tamaño según lo necesites */
+        line-height: 30px; /* Centra el icono verticalmente */
+        font-size: 10px; /* Tamaño del icono */
+        margin: 0 10px; /* Espacio entre botones */
+        
+    }
+
+    .input-search{
+        height: 30px;
+        width: 30px;
+        font-size: 13px;
+      }
+    .input-search::placeholder{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+    .btn-search{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .input-search:focus{
+        width: 200px;
+      }
+    
+}
+
+
 
 
 h1{
@@ -570,11 +670,69 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+/* Estilos Responsivos del index */
+@media (max-width: 768px) {
+    .portada {
+        font-size: 40px; 
+        margin-bottom: 20px;
+    }
+
+    #inicio {
+        height: 400px; 
+        background-size: cover; 
+    }
+
+    #texto2, #texto {
+        font-size: 16px; 
+        padding: 0 20px; 
+    }
+
+    .titulo, .titulo2 {
+        font-size: 24px; 
+    }
+
+    .boton {
+        padding: 8px 20px; 
+        font-size: 14px; 
+    }
+
+    .cajas {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .cajas .box {
+        width: 90%; 
+        margin: 15px 0; 
+    }
+
+    .info-contenido-flex {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .info-imagen img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .info-lista {
+        font-size: 14px; 
+    }
+
+    .info-contenedor-blanco {
+        padding: 10px; 
+    }
+
+    .texto-intro, .texto-final {
+        font-size: 1rem; 
+    }
+}
 
 
 
 
-
+/* quienes somos */
 
 #nosotros {
     position: relative;
@@ -1206,6 +1364,32 @@ form > button:hover,
  }
 
 
+ @media (max-width: 768px)  {
+    .contactoformulario {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 900px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+    .data > p {
+        text-align: center;
+    }
+    .box-info > h1 {
+        text-align: center;
+    }
+    .links a{
+     margin: 0 30px;
+    }
+}
 
 /*proyecto sanum*/
 /* Sección Introductoria */
@@ -1412,6 +1596,14 @@ form > button:hover,
     transform: translateY(0);
 }
 
+@media screen and (max-width: 768px) {
+    .project-stages .stage {
+        margin-left: 80px;
+
+
+    }
+    
+}
 
 
 
@@ -1972,7 +2164,7 @@ form > button:hover,
     filter: blur(130px);
 }
 @media screen and (max-width: 991px){
-    /* ipad, tablets */
+    /* tablets */
     .carousel .list .item{
         width: 90%;
     }
@@ -1983,8 +2175,8 @@ form > button:hover,
         font-size: 2em;
     }
 }
-@media screen and (max-width: 767px){
-    /* mobile */
+@media screen and (max-width: 768px){
+    /* moviles */
     .carousel{
         height: 600px;
     }
