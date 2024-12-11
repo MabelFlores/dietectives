@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dietectives</title>
     <link rel="stylesheet" href="./css/css.css">
+    <script defer src="./js/index.js"></script>
 </head>
 
 <body>
@@ -62,34 +63,50 @@
     </header>
 
     <main>
-        <div class="contenido" id="inicio">
+        <!-- Inicio -->
+        <div class="contenido scroll-element" id="inicio">
             <a name="inicio">
-            <h2 class="portada">Dietectives</h2>
+                <h2 class="portada">Dietectives</h2>
             </a>
             <p id="texto">
-                ¡Bienvenido a Dietectives! Nuestra misión es ayudarte a alcanzar tus metas de salud y bienestar a través de una alimentación equilibrada y consciente. Aquí encontrarás herramientas, recetas y planes diseñados para mejorar tu calidad de vida. ¡Transforma tu alimentación, transforma tu vida!  </p>
-    
+                ¡Bienvenido a Dietectives! Nuestra misión es ayudarte a alcanzar tus metas de salud y bienestar a través de una alimentación equilibrada y consciente. Aquí encontrarás herramientas, recetas y planes diseñados para mejorar tu calidad de vida. ¡Transforma tu alimentación, transforma tu vida!
+            </p>
             <div class="boton-home">
                 <a href="servicios.html" class="boton">¡EMPECEMOS YA!</a>
             </div>
         </div>
-        <a name="info">
-            <section class="contenido" id="información">
-                </a>
+        <!-- Info -->
+        <section class="contenido scroll-element" id="información">
+            <div class="info-contenedor-blanco">
+                <!-- Título y texto inicial centrados -->
                 <h2 class="titulo">¿Qué es una dieta saludable?</h2>
-                <h2 class="titulo2">Una dieta saludable es aquella que proporciona todos los nutrientes necesarios para mantener un cuerpo fuerte y saludable</h2>
-                <p id="texto2"> Incluye una variedad de alimentos frescos y naturales, como frutas, verduras, proteínas magras, grasas saludables y carbohidratos complejos. Recuerda: no se trata de restricciones, sino de equilibrio y bienestar.</p>
-            </section>
+                <p class="texto-intro">
+                    Una dieta saludable es aquella que proporciona todos los nutrientes necesarios para mantener un cuerpo fuerte y saludable.
+                </p>
         
-        <a name="prod">
-        <section class="contenido" id="productos" >
-        </a>
+                <!-- Contenedor de lista e imagen -->
+                <div class="info-contenido-flex">
+                    <ul class="info-lista">
+                        <li>Incluye una variedad de alimentos frescos y naturales.</li>
+                        <li>Contiene frutas, verduras, proteínas magras y grasas saludables.</li>
+                        <li>Evita restricciones extremas y se basa en el equilibrio.</li>
+                        <li>Promueve el bienestar físico y mental.</li>
+                    </ul>
+                    <div class="info-imagen">
+                        <img src="./img/logo parte posterior camisetas.jpg" alt="Dieta Saludable">
+                    </div>
+                </div>
+        
+                <!-- Texto final centrado -->
+                <p class="texto-final">
+                    Recuerda: no se trata de restricciones, sino de construir hábitos sostenibles que mejoren tu calidad de vida.
+                </p>
+            </div>
+        </section>
+        <!-- Servicios -->
+        <section class="contenido scroll-element" id="productos">
             <h2 class="titulo2">Nuestros Servicios</h2>
-        
-            <p></p>
-            
             <div class="cajas">
-    
                 <div class="box">
                     <img src="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/512px/1f4c6_color.png" alt="calendario" width="80px">
                     <h3>Planes personalizados</h3>
@@ -105,42 +122,37 @@
                     <h3>Nuestras Recetas</h3>
                     <a href="servicios.html" class="boton">Saber más!</a>
                 </div>
-    
             </div>
-    
         </section>
 
-    
-        <section class="contenido" id="nosotros">
-    
+        <!-- Nosotros -->
+        <section class="contenido scroll-element" id="nosotros">
             <article class="contain">
                 <a name="nos">
-                <h2 class="titulo" id="blanco">Nosotros(EJEMPLO)</h2>
+                    <h2 class="titulo" id="blanco">NOSOTROS</h2>
                 </a>
-                <p id="texto">En Tu Dietectives somos un equipo apasionado por la salud y la nutrición, comprometido con ayudarte a alcanzar tus metas de bienestar. <br>
-                    Creemos que una alimentación equilibrada no solo transforma tu cuerpo, sino también tu mente y tu calidad de vida.<br>
-
-                    Nuestro equipo está compuesto por:<br>
-                    
-                    Nutricionistas profesionales<br>
-                    Cocineros creativos.<br>
-                    Asesores en bienestar<br>
-                </p>
-    
-                <a href="quienesosmos.html" class="boton">Saber más</a>
-    
+                <div class="nosotros-contenido">
+                    <img src="./img/Todos.jpg" alt="Equipo Dietectives" class="img-nosotros">
+                    <div class="texto-nosotros">
+                        <p id="texto">
+                            En Dietectives somos un equipo apasionado por la salud y la nutrición.<br>
+                            Creemos que una alimentación equilibrada no solo transforma tu cuerpo, sino también tu mente y tu calidad de vida.<br>
+                        </p>
+                        <div class="boton-contenedor">
+                            <a href="quienesosmos.html" class="boton">Saber más!</a>
+                        </div>
+                    </div>
+                </div>
             </article>
-    
         </section>
-        <a name="cont">
-        <section class="contenido" id="contacto">
-        </a>
-            <h2 class="titulo2">Testimonios(Ejemplo)</h2>
+
+        <!-- Contacto -->
+        <section class="contenido scroll-element" id="contacto">
+            <h2 class="titulo2">Testimonios (Ejemplo)</h2>
             <p id="texto2">Carla P.:<em> "Gracias a Tu Dieta Ideal logré perder 10 kilos sin sacrificar mi comida favorita. ¡Me siento más saludable y feliz!"</em></p>
             <p id="texto2">Pedro G.: <em>"El plan personalizado me ayudó a ganar músculo de manera efectiva. ¡100% recomendado!"</em></p>
-            <p id="texto2"> Nutricionista Ana R.: <em>"Los recursos de esta página son de gran ayuda para cualquier persona que desee adoptar un estilo de vida saludable."</em></p>
+            <p id="texto2">Nutricionista Ana R.: <em>"Los recursos de esta página son de gran ayuda para cualquier persona que desee adoptar un estilo de vida saludable."</em></p>
         </section>
-
     </main>
 
     <footer>
