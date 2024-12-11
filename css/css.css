@@ -688,7 +688,7 @@ section {
     }
 
     .titulo, .titulo2 {
-        font-size: 24px; 
+        font-size: 30px; 
     }
 
     .boton {
@@ -697,7 +697,7 @@ section {
     }
 
     .cajas {
-        flex-direction: column; 
+
         align-items: center;
     }
 
@@ -705,11 +705,15 @@ section {
         width: 90%; 
         margin: 15px 0; 
     }
-
-    .info-contenido-flex {
-        flex-direction: column; 
-        gap: 10px; 
+    .cajas .box h3 {
+        font-size: 15px;
+    
     }
+    .box img{
+        width: 40px;
+
+    }
+
 
     .info-imagen img {
         max-width: 100%; 
@@ -717,15 +721,26 @@ section {
     }
 
     .info-lista {
-        font-size: 14px; 
+        font-size: 15px; 
+    }
+    .info-contenedor-blanco {
+        padding: 10px; /* Espaciado interno */
+      max-width: 700px; /* Ancho máximo */
     }
 
-    .info-contenedor-blanco {
-        padding: 10px; 
-    }
 
     .texto-intro, .texto-final {
         font-size: 1rem; 
+    }
+    
+    .info-lista li {
+        font-size: 15px;
+        padding-left: 30px;
+    }
+    .cajas .box {
+        height: 90px;
+        width: 150px;
+        margin: 15px;   
     }
 }
 
@@ -1187,35 +1202,26 @@ section {
 
 
 /*contacto*/
-/* Título separado */
-.contact-title {
-    background: #92b593;
+
+
+.main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #465947;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    padding: 20px 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 100%;
 }
-
-.contact-title h1 {
-    font-size: 2rem;
-    color: #fdfcf7;
-    letter-spacing: 2px;
-}
-
 
 .contactoformulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8));
-    border-radius: 10px;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+    height: 725px;
+    margin-top: 100px;
 }
 .box-info {
     color:#fff;
@@ -1224,16 +1230,15 @@ section {
     gap:50px;
 }
 
-.map-container {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+    color: #fdfcf7;
 }
 .data {
     display: flex;
     flex-direction: column;
-    gap:5px
+    gap:25px
 }
 
 .data > p {
@@ -1253,17 +1258,14 @@ section {
     gap:15px;
 }
 
-.links a {
-    width: 35px;
-    height: 35px;
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
     background: #88b28a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    transition: 0.3s;
+    text-align: center;
+    transition: .1s;
 }
-
 
 .links > a > i {
     color:#fff;
@@ -1361,10 +1363,32 @@ form > button:hover,
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
  }
+ @media (max-width: 768px)  {
+    .contactoformulario {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 900px;
+    }
 
+    .box-info {
+        gap:15px;
+    }
 
-
-
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+    .data > p {
+        text-align: center;
+    }
+    .box-info > h1 {
+        text-align: center;
+    }
+    .links a{
+     margin: 0 30px;
+    }
+}
 
 /*proyecto sanum*/
 /* Sección Introductoria */
