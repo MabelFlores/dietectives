@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Animación de Scroll
     const scrollElements = document.querySelectorAll('.scroll-element');
 
     const elementInView = (el, offset = 100) => {
@@ -21,21 +22,36 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', handleScrollAnimation);
-    handleScrollAnimation(); // Para activar la animación de los elementos visibles al cargar
-});
+    handleScrollAnimation(); // Activa elementos visibles al cargar
 
+    // Modal de Imágenes
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('img01');
+    const closeBtn = document.querySelector('.close');
 
-document.querySelectorAll(".gallery img").forEach(img => {
-    img.addEventListener("click", () => {
-        const lightbox = document.createElement("div");
-        lightbox.classList.add("lightbox");
-        const lightboxImg = document.createElement("img");
-        lightboxImg.src = img.src;
-        lightbox.appendChild(lightboxImg);
-        document.body.appendChild(lightbox);
+    // Asegurarse de que el modal esté oculto al inicio
+    if (modal) {
+        modal.style.display = 'none';
 
-        lightbox.addEventListener("click", () => {
-            document.body.removeChild(lightbox);
+        // Seleccionar imágenes que activan el modal
+        const clickableImages = document.querySelectorAll('.clickable');
+        clickableImages.forEach((img) => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex'; // Mostrar el modal
+                modalImg.src = img.src; // Mostrar la imagen seleccionada
+            });
         });
-    });
+
+        // Cerrar el modal al hacer clic en la "X"
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Cerrar el modal al hacer clic fuera de la imagen
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });

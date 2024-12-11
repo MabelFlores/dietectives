@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Actividades - Dietectives</title>
     <link rel="stylesheet" href="./css/css.css"> 
+    <script defer src="./js/index.js"></script>
 
 </head>
 <body>
@@ -41,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="envelope" href="#">
+                        <a class="envelope" href="contacto.html#contact-form">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -62,13 +63,44 @@
     </header>
     
     <main>
-        <section class="hero-activity">
+        <section class="hero-activity scroll-element">
             <h1>Nuestras Actividades Presenciales</h1>
             <p>Un vistazo a los eventos y actividades que hemos organizado.</p>
         </section>
     
-        <section class="activities-history">
+        <section class="activities-history scroll-element">
             <h2>Archivo de Actividades</h2>
+            <div class="activity">
+                <div class="activity-date">
+                    <p>8 de Diciembre, 2024</p>
+                </div>
+                <div class="activity-content">
+                    <h3>Visita de Investigación al comedor escolar del CEIP Bolivia</h3>
+                    <p>Hemos podido comer con el personal encargado de dar de comer a los niños y probar en primera persona el menú.
+                        Después hemos podido estar con los niños mientras comían y disfrutaban de uno de los mejores momentos del día, la comida con los amigos y después jugar en el patio. 
+                        ¡Ha sido una gran experiencia!
+                    </p>
+                    <img src="img/act2.jpg" alt="Visita de Investigación" class="clickable">
+                    <img src="img/act4.jpg" alt="Visita de Investigación" class="clickable">
+                    <img src="img/act3.jpg" alt="Visita de Investigación" class="clickable">
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="activity-date">
+                    <p>8 de Noviembre, 2024</p>
+                </div>
+                <div class="activity-content">
+                    <h3>Ideas Saludables</h3>
+                    <p>En esta actividad, presentamos alternativas creativas y prácticas para meriendas y desayunos saludables, destacando la importancia de alimentos integrales, reducción de azúcares añadidos y el uso de ingredientes frescos. Además, exploramos recetas sencillas, como bocadillos nutritivos y salsas caseras, ideales para promover una alimentación equilibrada en el entorno escolar y familiar. Hemos compartido estas ideas con nuestros compañeros del IES Leonardo Da Vinci.</p>
+                    <img src="img/is1.png" alt="IdeasSaludables1" class="clickable">
+                    <img src="img/is2.png" alt="IdeasSaludables2" class="clickable">
+                    <img src="img/is3.png" alt="IdeasSaludables3" class="clickable">
+                    <div class="button-container">
+                        <a href="./img/Ideas saludables charla CEIP Bolivia .pdf" target="_blank" class="download-button">Descargar PDF</a>
+                    </div>
+                </div>
+            </div>
     
             <div class="activity">
                 <div class="activity-date">
@@ -80,31 +112,22 @@
                         Gracias a la tecnología y la IA hemos diseñado un plato harvard para las charlas con niños, padres y madres del CEIP Bolivia y de esta forma poder acercarles un poco más a la idea de alimentación equilibrada y saludable.
                         También, con la impresora 3D, tenemos en proceso nuestra pirámide nutricional.
                         ¡Hemos hecho hasta una canción!
-                        </p>
-                    <img src="img/Actividad centro orange 1.jpg" alt="Foto del Centro Digital de la Fundación Orange">
-                    <img src="img/Actividad centro orange 3.jpg" alt="Foto del Centro Digital de la Fundación Orange">
-                    <img src="img/Actividad centro orange.jpg" alt="Foto del Centro Digital de la Fundación Orange">
+                    </p>
+                    <img src="img/Actividad centro orange 1.jpg" alt="Foto del Centro Digital de la Fundación Orange" class="clickable">
+                    <img src="img/Actividad centro orange 3.jpg" alt="Foto del Centro Digital de la Fundación Orange" class="clickable">
+                    <img src="img/Actividad centro orange.jpg" alt="Foto del Centro Digital de la Fundación Orange" class="clickable">
                 </div>
             </div>
-    
-            <div class="activity">
-                <div class="activity-date">
-                    <p>Ejemplo 23 de Septiembre, 2024</p>
-                </div>
-                <div class="activity-content">
-                    <h3>EJEMPLO Conferencia sobre Dietas</h3>
-                    <p>Organizamos una conferencia dedicada a las últimas tendencias en dietas. Errrfhsdufhsdhiflsrrdfojsdiofjsdiofjisdfsdjisfjilsdñfssdkfñfhsudfhlisdfsdf.</p>
-                    <img src="evento2.jpg" alt="Foto de la conferencia ">
-                </div>
-            </div>
-    
-            
-
-        </section>    
+        </section>  
     </main>
-
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    
     <footer>
         <p>&copy; 2024 Dietectives. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
