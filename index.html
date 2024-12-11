@@ -8,108 +8,7 @@
     <title>Dietectives</title>
     <link rel="stylesheet" href="./css/css.css">
     <script defer src="./js/index.js"></script>
-    <style>
-        /* Ajustes responsivos */
-        @media (max-width: 768px) {
-            .menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: #ae937b;
-                z-index: 1000;
-            }
-
-            .menu.active {
-                display: flex;
-            }
-
-            .menu li {
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            .hamburger-menu {
-                display: block;
-                cursor: pointer;
-                font-size: 24px;
-                color: #e2e2dd;
-            }
-
-            .search-social {
-                display: none;
-            }
-
-            .logo-container {
-                flex: 1;
-                text-align: center;
-            }
-
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-            }
-
-            #inicio {
-                text-align: center;
-                padding: 20px;
-            }
-
-            .contenido {
-                padding: 10px;
-            }
-
-            .info-contenido-flex {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .info-lista {
-                text-align: center;
-            }
-
-            .info-imagen img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .nosotros-contenido {
-                flex-direction: column;
-                gap: 20px;
-                padding: 20px;
-            }
-
-            .texto-nosotros {
-                text-align: center;
-            }
-
-            .boton-contenedor {
-                display: flex;
-                justify-content: center;
-            }
-
-            .cajas {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .box {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .hamburger-menu {
-                display: none;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -262,11 +161,7 @@
     <footer>
         <p>&copy; 2024 Dietectives. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', () => {
-            document.querySelector('.menu').classList.toggle('active');
-        });
-    </script>
+    
 </body>
 </html>
 
