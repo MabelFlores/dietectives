@@ -1187,26 +1187,35 @@ section {
 
 
 /*contacto*/
-
-
-.main {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(../img/verde.png);
+/* Título separado */
+.contact-title {
+    background: #92b593;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 100%;
 }
 
+.contact-title h1 {
+    font-size: 2rem;
+    color: #fdfcf7;
+    letter-spacing: 2px;
+}
+
+
 .contactoformulario{
-    display:grid;
-    grid-template-columns: repeat(2,50%);
-    padding:20px;
-    gap:10px;
-    width: 1000px;
-    height: 565px;
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8));
+    border-radius: 10px;
 }
 .box-info {
     color:#fff;
@@ -1215,15 +1224,16 @@ section {
     gap:50px;
 }
 
-.box-info > h1 {
-    text-align: left;
-    letter-spacing: 5px;
-    color: #fdfcf7;
+.map-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .data {
     display: flex;
     flex-direction: column;
-    gap:25px
+    gap:5px
 }
 
 .data > p {
@@ -1243,14 +1253,17 @@ section {
     gap:15px;
 }
 
-.links > a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
+.links a {
+    width: 35px;
+    height: 35px;
     background: #88b28a;
-    text-align: center;
-    transition: .1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
 
 .links > a > i {
     color:#fff;
@@ -1348,6 +1361,8 @@ form > button:hover,
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
  }
+
+
 
 
 
