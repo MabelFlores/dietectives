@@ -46,7 +46,7 @@ nav {
 
 /* Los puntos del menu*/
 .menu {
-    flex: 2;
+    flex: 1;
     display:flex;
     justify-content: flex-start;
     list-style: none;
@@ -61,9 +61,9 @@ nav {
 
 .menu li a {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 450; /* Ajusta el peso según lo necesites */
+    font-weight: 440; /* Ajusta el peso según lo necesites */
     color: #e2e2dd; /* Cambia el color según tu diseño */
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     text-shadow: 1px 1px 2px #222c30;
     padding: 40px 15px; /* Añadir padding para hacer que el área del enlace sea más grande */
@@ -347,16 +347,26 @@ section {
     color: #E7F2D5;
 }
 #inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#inicio{
+    position: relative;
     height: 550px;
     background: url(../img/dieta2.png) no-repeat center;
     background-size: cover;
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.668); /* Color negro con 50% de opacidad */
+    z-index: 1;
+}
+
+#inicio > * {
+    position: relative; /* Asegura que el contenido quede por encima de la superposición */
+    z-index: 2;
 }
 
 .titulo {
@@ -406,15 +416,14 @@ section {
     border: 2px solid #374738;
     color: #000000;
     text-decoration: none;
-    background: #C7D989;
+    background: #8bb28d;
     border-radius: 20px;
     font-family:'Josefin Sans', 'sans-serif';
     color: #000000;
 }
 
 .boton:hover {
-    background: none;
-    filter: blur(0.8px);
+    background: #71624D;
     
 }
 
@@ -453,14 +462,30 @@ section {
 }
 
 #información {
-    background: #C7D989;
+    background: #8bb28d;
 }
 
 #nosotros {
+    position: relative;
     background: url(../img/dieta1.png) ;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+}
+#nosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.668); /* Negro con 50% de opacidad */
+    z-index: 1;
+}
+
+#nosotros > * {
+    position: relative; /* Asegura que el contenido esté encima de la superposición */
+    z-index: 2;
 }
 
 
@@ -882,6 +907,169 @@ section {
     border-radius: 8px;
     margin-top: 30px;
 }
+
+/*Recetas*/
+/* Estilo del contenedor de recetas */
+.recetas-grid {
+    display: grid;
+    background-color: #f3f3ea;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre las recetas */
+    padding: 20px;
+    max-width: 1100px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el main */
+}
+
+/* Estilo de cada receta */
+.receta {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000; /* Borde como en el diseño */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    cursor: pointer;
+}
+
+/* Ajuste de las imágenes */
+.receta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin deformarse */
+    aspect-ratio: 4 / 3; /* Proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+/* Efecto hover en las imágenes */
+.receta:hover img {
+    transform: scale(1.1); /* Zoom al pasar el cursor */
+}
+
+/* Estilo del overlay (texto sobre la imagen) */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar más claramente el overlay al hacer hover */
+.receta:hover .overlay {
+    opacity: 1;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .recetas-grid {
+        max-width: 90%; /* Reducir el ancho en móviles */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+}
+
+@media (max-width: 480px) {
+    .recetas-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+/* Contenedor principal de la receta expandida */
+.receta-detalle {
+
+    max-width: 1000px; /* Ancho máximo */
+    margin: 40px auto; /* Centramos horizontalmente y añadimos margen superior/inferior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; /* Fuente uniforme */
+    font-size: 1.2rem; /* Tamaño base para todo el texto */
+    line-height: 1.6; /* Espaciado uniforme entre líneas */
+    color: #333; /* Color uniforme */ /* Centrar texto dentro */
+}
+
+/* Imagen de la receta */
+.receta-detalle img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 8px; /* Espaciado debajo de la imagen */
+}
+
+/* Títulos principales (título de la receta) */
+.receta-detalle h2 {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: #333; /* Color oscuro */
+    margin-bottom: 10px; /* Espaciado debajo */
+    font-weight: bold;
+}
+
+/* Subtítulos de secciones (Ingredientes, Preparación, Consejos) */
+.receta-detalle h3 {
+    font-size: 1.5rem; /* Tamaño medio */
+    color: #7f9c5f; /* Verde oscuro */
+    text-align: left; /* Alineado a la izquierda */
+    margin: 20px 0 10px; /* Espaciado arriba y abajo */
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Línea debajo */
+    padding-bottom: 5px; /* Espaciado debajo de la línea */
+}
+
+/* Listas de ingredientes y pasos */
+.receta-detalle ul, .receta-detalle ol {
+    text-align: left; /* Alineado a la izquierda */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Elementos de lista */
+.receta-detalle ul li, .receta-detalle ol li {
+    margin-bottom: 8px; /* Espaciado entre elementos */
+}
+
+/* Texto para Consejos y Acompañamiento */
+.receta-detalle p {
+    font-size: 1.2rem; /* Mismo tamaño que el texto principal */
+    color: #555; /* Gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 20px;
+    text-align: left; /* Alineado a la izquierda */
+}
+
+/* Destacar texto importante (Variante vegana) */
+.receta-detalle strong {
+    color: #7f9c5f; /* Verde oscuro */
+    font-weight: bold;
+}
+
+/* Botón "Volver" */
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7f9c5f; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #6b874e; /* Verde más oscuro */
+}
+
+
 
 
 /*Servicios*/

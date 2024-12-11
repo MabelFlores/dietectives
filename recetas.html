@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recetas - Dietectives</title>
+    <link rel="stylesheet" href="./css/css.css"> 
+    <script defer src="./js/recetas.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="Logo Dietectives"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="proyectosanum.html">Proyecto SANUM</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="search-social">
+                <div class="social-buttons">
+                    <ul>
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/proyectosanum/" target="_blank">
+                                <span></span><span></span><span></span><span></span>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="envelope" href="#">
+                                <span></span><span></span><span></span><span></span>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Buscar">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="about-us">
+    <main id="main-content" class="recetas-grid">
+        
+        <!-- Recetas en cuadrícula -->
+        <div class="receta" onclick="expandirReceta('receta1')">
+            <img src="./img/receta1.png" alt="Receta 1">
+            <div class="overlay">Potaje de garbanzos con espinacas y bacalao</div>
+        </div>
+        <div class="receta" onclick="expandirReceta('receta2')">
+            <img src="./img/receta2.png" alt="Receta 2">
+            <div class="overlay">Brócoli gratinado al air fryer/horno</div>
+        </div>
+        <div class="receta" onclick="expandirReceta('receta3')">
+            <img src="./img/receta3.png" alt="Receta 3">
+            <div class="overlay">“Spanakopita” (pastel griego de espinacas)</div>
+        </div>
+        <div class="receta" onclick="expandirReceta('receta4')">
+            <img src="./img/receta4.png" alt="Receta 4">
+            <div class="overlay">Avena trasnochada</div>
+        </div>
+        <div class="receta" onclick="expandirReceta('receta5')">
+            <img src="./img/receta5.png" alt="Receta 5">
+            <div class="overlay">Ensalada de arroz rojo y pimientos rojos asados</div>
+        </div>
+        <div class="receta" onclick="expandirReceta('receta6')">
+            <img src="./img/receta6.png" alt="Receta 6">
+            <div class="overlay">Bizcocho casero</div>
+        </div>
+    
+    </main>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Dietectives. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
