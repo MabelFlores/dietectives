@@ -23,3 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScrollAnimation);
     handleScrollAnimation(); // Para activar la animación de los elementos visibles al cargar
 });
+
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        const lightbox = document.createElement("div");
+        lightbox.classList.add("lightbox");
+        const lightboxImg = document.createElement("img");
+        lightboxImg.src = img.src;
+        lightbox.appendChild(lightboxImg);
+        document.body.appendChild(lightbox);
+
+        lightbox.addEventListener("click", () => {
+            document.body.removeChild(lightbox);
+        });
+    });
+});
