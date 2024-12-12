@@ -660,7 +660,7 @@ section {
     transform: translateY(0);
 }
 
-/* Estilos Responsivos del index */
+/* Estilos Responsive del index */
 @media (max-width: 768px) {
     .portada {
         font-size: 40px; 
@@ -688,15 +688,15 @@ section {
         align-items: center;
     }
     .cajas .box {
-        height: 160px;
-        width: 150px;
-        margin: 10px 5px;  
+        height: 150px;
+        width: 120px;
+        margin: 15px 15px;  
     }
     .cajas .box:nth-of-type(3) a {
-        margin-top: 30px; 
+        margin-top: 28px; 
     }
     .cajas .box h3 {
-        font-size: 16px;
+        font-size: 13px;
     }
     .box img{
         width: 60px;
@@ -714,10 +714,10 @@ section {
         max-height: 465px;
     }
     .texto-intro, .texto-final {
-        font-size: 16px; 
+        font-size: 13px; 
     }
     .info-lista li {
-        font-size: 14px;
+        font-size: 12px;
         padding-left: 30px;
     }
 }
