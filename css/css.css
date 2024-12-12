@@ -1985,6 +1985,22 @@ form > button:hover,
         width: max-content;
         float: right;
     }
+    .carousel .list .item .detail .des{
+        font-size: 10px;
+    }
+    .carousel .list .item .detail .specifications{
+        font-size: 7px;
+    }
+    .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
+        display: flex;
+        gap: 17px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .carousel.showDetail .list .item:nth-child(2) .detail .specifications div{
+        width: 30px;
+
+    }
 }
 /*----------------FIN DE SERVICIOS---------------------*/
 
