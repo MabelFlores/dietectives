@@ -5,8 +5,7 @@ body {
     padding: 0;
     background-color: #d5c4b0;
 }
-
-/* estilo cabecera */
+/*---estilo cabecera---*/
 header {
     display: flex;
     justify-content: center;
@@ -31,8 +30,6 @@ header::before {
     opacity: 0.15;
     z-index: 0;
 }
-
-
 nav {
     display:flex;
     justify-content: space-between;
@@ -40,11 +37,10 @@ nav {
     width: 100%;
     position: relative;
     z-index: 1;
-    padding: 0; /* Restablece el padding */
-    margin: 0; /* Restablece el margen */
+    padding: 0; 
+    margin: 0; 
 }
-
-/* Los puntos del menu*/
+/*---El menu---*/
 .menu {
     flex: 1;
     display:flex;
@@ -53,184 +49,158 @@ nav {
     padding: 0;
     margin: 0;
 }
-
 .menu li {
-    margin: 0; /* Asegúrate de que no haya margen adicional */
+    margin: 0; 
     padding: 0;
 }
-
 .menu li a {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 440; /* Ajusta el peso según lo necesites */
-    color: #e2e2dd; /* Cambia el color según tu diseño */
+    font-weight: 440; 
+    color: #e2e2dd;
     font-size: 20px;
     text-decoration: none;
     text-shadow: 1px 1px 2px #222c30;
-    padding: 40px 15px; /* Añadir padding para hacer que el área del enlace sea más grande */
-    border-radius: 5px; /* Opcional: redondear los bordes de los elementos del menú */
-    transition: transform 0.3s ease, background-color 0.3s ease;  /* Transición suave */
+    padding: 40px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;  
 }
-
 .menu li a:hover {
-    background-color: #8bb28d; /* Cambia el color de fondo al pasar el ratón */
-    color: #222c30; /* Cambia el color del texto al pasar el ratón */
+    background-color: #8bb28d;
+    color: #222c30; 
     text-shadow: 1px 1px 2px #e2e2dd;
     transform: scale(5.1);
-
 }
 nav li {
     list-style: none;
     padding: 0;
 }
+/*---Fin del menu---*/
 
-
-/* el logo */
-
+/*---Logo---*/
 .logo-container {
-    text-align: center; /* O usar display: flex y justify-content: center */
+    text-align: center; 
 }
-
 .logo-container img {
     max-width: 60%;
     height: auto;
     transition: transform 0.6s ease;
 }
-
 .logo-container img:hover {
     transform: scale(1.1);
 }
-
 .search-social {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     height: 100%;
 }
-/* Redes Sociales*/
+/*---Fin del Logo---*/
+
+/*---Redes Sociales---*/
 .social-buttons {
     display: flex;
-    justify-content: center; /* Centrar los botones */
-    margin-top: 8px; /* Espacio entre el buscador y los botones de redes sociales */
+    justify-content: center;
+    margin-top: 8px; 
     margin-bottom: 5px;
 }
-
 .social-buttons ul {
-    margin: 0; /* Eliminar margen para centrar correctamente */
-    padding: 0; /* Eliminar padding */
-    display: flex; /* Usar flexbox para alinear los elementos horizontalmente */
+    margin: 0;
+    padding: 0; 
+    display: flex; 
 }
-
 .social-buttons ul li {
-    list-style: none; /* Eliminar el estilo de lista */
+    list-style: none; 
 }
-
 .social-buttons ul li a {
     display: block;
     position: relative;
-    width: 60px; /* Puedes ajustar el tamaño según lo necesites */
-    height: 60px; /* Puedes ajustar el tamaño según lo necesites */
-    line-height: 60px; /* Centra el icono verticalmente */
-    font-size: 20px; /* Tamaño del icono */
+    width: 60px; 
+    height: 60px;
+    line-height: 60px; 
+    font-size: 20px; 
     text-align: center;
     text-decoration: none;
-    color: #404040; /* Color del icono */
-    margin: 0 30px; /* Espacio entre botones */
+    color: #404040; 
+    margin: 0 30px; 
     transition: .5s;
 }
-
 .social-buttons ul li a span {
     position: absolute;
     transition: transform .5s;
 }
-
 .social-buttons ul li a span:nth-child(1),
 .social-buttons ul li a span:nth-child(3) {
     width: 100%;
     height: 3px;
-    background: #404040; /* Color de las líneas */
+    background: #404040; 
 }
-
 .social-buttons ul li a span:nth-child(1) {
     top: 0;
     left: 0;
     transform-origin: right;
 }
-
 .social-buttons ul li a:hover span:nth-child(1) {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .5s;
 }
-
 .social-buttons ul li a span:nth-child(3) {
     bottom: 0;
     left: 0;
     transform-origin: left;
 }
-
 .social-buttons ul li a:hover span:nth-child(3) {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .5s;
 }
-
 .social-buttons ul li a span:nth-child(2),
 .social-buttons ul li a span:nth-child(4) {
     width: 3px;
     height: 100%;
-    background: #404040; /* Color de las líneas verticales */
+    background: #404040;
 }
-
 .social-buttons ul li a span:nth-child(2) {
     top: 0;
     left: 0;
     transform: scale(0);
     transform-origin: bottom;
 }
-
 .social-buttons ul li a:hover span:nth-child(2) {
     transform: scale(1);
     transform-origin: top;
     transition: transform .5s;
 }
-
 .social-buttons ul li a span:nth-child(4) {
     top: 0;
     right: 0;
     transform: scale(0);
     transform-origin: top;
 }
-
 .social-buttons ul li a:hover span:nth-child(4) {
     transform: scale(1);
     transform-origin: bottom;
     transition: transform .5s;
 }
-
 .instagram:hover {
-    color: #c32aa3; /* Color de la red social */
+    color: #c32aa3; 
 }
-
 .instagram:hover span { 
-    background: #c32aa3; /* Color de fondo en hover */
+    background: #c32aa3;
 }
-
 .envelope:hover {
-    color: #dd4b39; /* Color de la red social */
+    color: #dd4b39; 
 }
 
 .envelope:hover span { 
-    background: #dd4b39; /* Color de fondo en hover */
+    background: #dd4b39; 
 }
-/* Fin Redes Sociales*/
+/*---Fin Redes Sociales---*/
 
-
-/* Boton de busqueda*/
+/*---Boton de busqueda---*/
 *{
     box-sizing: border-box;
   }
-
-
 .search-box{
     flex: 1;
     display:flex;
@@ -240,7 +210,6 @@ nav li {
     height: fit-content;
     position: relative;
   }
-
   .input-search{
     height: 50px;
     width: 50px;
@@ -277,10 +246,9 @@ nav li {
     background-color:transparent;
     pointer-events: painted;  
   }
-
   .btn-search:hover {
-    background-color: #8bb28d; /* Cambia el color de fondo al pasar el ratón */
-}
+    background-color: #8bb28d; 
+  }
   .btn-search:focus ~ .input-search{
     width: 300px;
     border-radius: 0px;
@@ -295,48 +263,38 @@ nav li {
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
+  /*---Fin de boton de busqueda---*/
 
-  /* Fin de boton de busqueda*/
+  /*---Responsive de la barra menu y los iconos de las redes sociales---*/
   @media (max-width: 768px) {
-    /* Cabecera */
     header {
         flex-direction: column;
         align-items: flex-start;
     }
-
     nav {
         flex-direction: column;
     }
-
-    /* Logo alineado a la izquierda */
     .logo-container {
         order: -1;
         align-self: center;
         padding: 10px 20px;
     }
-
     .logo-container img {
-        max-width: 130px; /* Tamaño ajustado para pantallas pequeñas */
+        max-width: 130px;
     }
-
-    /* Menú en dos filas */
     .menu {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px; /* Espacio entre los elementos del menú */
+        gap: 10px; 
     }
-
     .menu li {
         flex: 1 1 auto;
         text-align: center;
     }
-
     .menu li a {
         padding: 10px;
-        font-size: 16px; /* Ajuste del tamaño de texto para pantallas pequeñas */
+        font-size: 16px; 
     }
-
-    /* Redes sociales y buscador a la derecha */
     .search-social {
         flex-direction: row;
         justify-content: space-between;
@@ -345,41 +303,34 @@ nav li {
         padding: 0 20px;
         margin-top: 10px;
     }
-
     .search-box {
         flex: 1;
         justify-content: flex-end;
     }
-
     .social-buttons {
         margin: 0;
         flex: 1;
         align-items: left;
         margin: 0
     }
-
     .social-buttons ul {
         justify-content: flex-end;
-
     }
-
     .social-buttons ul li {
-        margin: 0 2px; /* Espaciado más pequeño para pantallas pequeñas */
+        margin: 0 2px; 
     }
     .social-buttons ul li a {
-        width: 30px; /* Puedes ajustar el tamaño según lo necesites */
-        height: 30px; /* Puedes ajustar el tamaño según lo necesites */
-        line-height: 30px; /* Centra el icono verticalmente */
-        font-size: 10px; /* Tamaño del icono */
-        margin: 0 10px; /* Espacio entre botones */
-        
+        width: 30px; 
+        height: 30px; 
+        line-height: 30px; 
+        font-size: 10px; 
+        margin: 0 10px; 
     }
-
     .input-search{
         height: 30px;
         width: 30px;
         font-size: 13px;
-      }
+    }
     .input-search::placeholder{
         font-size: 13px;
         letter-spacing: 1px;
@@ -392,12 +343,9 @@ nav li {
     }
     .input-search:focus{
         width: 200px;
-      }
-    
+    }
 }
-
-
-
+/*---Fin del Responsive del menu y redes sociales---*/
 
 h1{
     color: #222c30;
@@ -421,13 +369,12 @@ main {
     text-align: center;
     background-color: #d6c5b1
 }
-
 section {
     margin-bottom: 0px;
 }
+/*---Fin del header---*/
 
-/*index*/
-
+/*----------------INDEX---------------------*/
 @keyframes ColorEnMovimiento
 {
 0%   {color: #FFDDAC;}
@@ -452,7 +399,6 @@ section {
     background: url(../img/dieta2.png) no-repeat center;
     background-size: cover;
 }
-
 #inicio::before {
     content: "";
     position: absolute;
@@ -460,15 +406,13 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.668); /* Color negro con 50% de opacidad */
+    background-color: rgba(0, 0, 0, 0.668);
     z-index: 1;
 }
-
 #inicio > * {
-    position: relative; /* Asegura que el contenido quede por encima de la superposición */
+    position: relative; 
     z-index: 2;
 }
-
 .titulo {
     font-family:'Josefin Sans', 'sans-serif' ;
     margin-bottom: 15px;
@@ -508,7 +452,6 @@ section {
     font-family:'Josefin Sans', 'sans-serif';
 
 }
-
 .boton {
     display: inline-block;
     margin-top: 15px;
@@ -524,13 +467,11 @@ section {
     transition: all 0.3s ease;
 
 }
-
 .boton:hover {
     background: linear-gradient(45deg, #71624D, #8bb28d);
     color: white;
     
 }
-
 .boton::before {
     content: '';
     position: absolute;
@@ -544,7 +485,6 @@ section {
 .boton:hover::before {
     left: 100%;
 }
-
 .contenido {
     height: 500px;
     display: flex;
@@ -552,18 +492,15 @@ section {
     justify-content: center;
     align-items: center;
 }
-
 .contenido {
     padding: 30px;
     background:  #E7F2D5;
 }
-
 .cajas {
     display: flex;
     text-align: center;
     padding-top: 0px;
 }
-
 .cajas .box {
     height: 180px;
     width: 280px;
@@ -573,37 +510,30 @@ section {
     box-shadow: 0 5px 80px rgba(1, 1 , 1, 1.5);
     margin: 30px;   
 }
-
 .cajas .box h3 {
     font-size: 20px;
     color: #83C986;
 
 }
-
 #información {
     background: #8bb28d;
 }
-/* Contenedor principal con fondo blanco */
 .info-contenedor-blanco {
-    background: #c1b092; /* Fondo blanco */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra */
-    max-width: 1250px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar en la página */
-    text-align: center; /* Texto centrado por defecto */
+    background: #c1b092; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
-
-/* Contenedor para el contenido principal */
 .info-contenido-flex {
     display: flex;
-    justify-content: space-between; /* Espacio entre lista e imagen */
-    align-items: flex-start; /* Alinear verticalmente al inicio */
-    margin-top: 0px; /* Separación del título */
-    gap: 20px; /* Espaciado entre lista e imagen */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 0px; 
+    gap: 20px; 
 }
-
-/* Lista alineada a la izquierda */
 .info-lista {
     font-family:'Josefin Sans', 'sans-serif';
     font-size: 16px;
@@ -611,16 +541,14 @@ section {
     padding-top: 20px;
     margin: 0;
     text-align: left;
-    flex: 1.5; /* Ocupa más espacio que la imagen */
+    flex: 1.5; 
 }
-
 .info-lista li {
     margin: 10px 0;
     font-size: 18px;
     padding-left: 30px;
     position: relative;
 }
-
 .info-lista li::before {
     content: "✔";
     color: #5e775f;
@@ -628,127 +556,38 @@ section {
     left: 0;
     font-size: 18px;
 }
-
-/* Imagen alineada a la derecha */
 .info-imagen {
-    flex: 1; /* Ocupa menos espacio */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centrar imagen horizontalmente */
+    justify-content: center; 
 }
-
 .info-imagen img {
-    max-width: 80%; /* Ajustar ancho dentro del contenedor */
-    border-radius: 25px; /* Bordes redondeados */
+    max-width: 80%;
+    border-radius: 25px; 
 
 }
-
-/* Texto introductorio centrado */
 .texto-intro {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 20px;
     color: #555;
 }
-
-/* Texto final centrado */
 .texto-final {
     font-size: 1.1rem;
     font-style: italic;
     color: #666;
-    margin-top: 20px; /* Separación de la lista */
-    text-align: center; /* Texto centrado */
+    margin-top: 20px; 
+    text-align: center; 
 }
-
-/* Animación al desplazarse */
 .scroll-element {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .scroll-element.visible {
     opacity: 1;
     transform: translateY(0);
 }
-/* Estilos Responsivos del index */
-@media (max-width: 768px) {
-    .portada {
-        font-size: 40px; 
-        margin-bottom: 20px;
-    }
-
-    #inicio {
-        height: 400px; 
-        background-size: cover; 
-    }
-
-    #texto2, #texto {
-        font-size: 16px; 
-        padding: 0 20px; 
-    }
-
-    .titulo, .titulo2 {
-        font-size: 30px; 
-    }
-
-    .boton {
-        padding: 8px 20px; 
-        font-size: 14px; 
-    }
-
-    .cajas {
-
-        align-items: center;
-    }
-
-    .cajas .box {
-        width: 90%; 
-        margin: 15px 0; 
-    }
-    .cajas .box h3 {
-        font-size: 15px;
-    
-    }
-    .box img{
-        width: 40px;
-
-    }
-
-
-    .info-imagen img {
-        max-width: 100%; 
-        height: auto; 
-    }
-
-    .info-lista {
-        font-size: 15px; 
-    }
-    .info-contenedor-blanco {
-        padding: 10px; /* Espaciado interno */
-      max-width: 700px; /* Ancho máximo */
-    }
-
-
-    .texto-intro, .texto-final {
-        font-size: 1rem; 
-    }
-    
-    .info-lista li {
-        font-size: 15px;
-        padding-left: 30px;
-    }
-    .cajas .box {
-        height: 90px;
-        width: 150px;
-        margin: 15px;   
-    }
-}
-
-
-
-
-/* quienes somos */
-
 #nosotros {
     position: relative;
     background: url(../img/dieta1.png) ;
@@ -763,23 +602,20 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.668); /* Negro con 50% de opacidad */
+    background-color: rgba(0, 0, 0, 0.668);
     z-index: 1;
 }
-
 #nosotros > * {
-    position: relative; /* Asegura que el contenido esté encima de la superposición */
+    position: relative;
     z-index: 2;
 }
-
 .nosotros-contenido {
     display: flex;
-    align-items: center; /* Alinear verticalmente */
-    gap: 14px; /* Espaciado entre la imagen y el texto */
+    align-items: center; 
+    gap: 14px;
     max-width: 1300px;
     
 }
-
 .img-nosotros {
     flex: 1.5;
     max-width: 30%;
@@ -795,126 +631,167 @@ section {
     background: linear-gradient(45deg, #8bb28d, #e7f2d5);
     padding: 10px;
 }
-
 .texto-nosotros {
-    flex: 1.5; /* El texto ocupará un espacio proporcional */
-    text-align: left; /* Alineación del texto */
+    flex: 1.5;
+    text-align: left;
     text-align: justify;
 }
-
 .texto-nosotros p {
     margin-bottom: 20px;
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Ajuste dinámico */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
-
 .boton-contenedor {
-    display: flex; /* Para alinear el botón */
-    justify-content: center; /* Centrar horizontalmente */
-    margin-top: 20px; /* Separación del texto */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 #contacto {
     padding-top: 20px;
     background: #E7F2D5;
     padding-bottom: 0;
 }
-
 .scroll-element {
     opacity: 0;
-    transform: translateY(50px); /* Desplaza hacia abajo inicialmente */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .scroll-element.visible {
     opacity: 1;
-    transform: translateY(0); /* Regresa a su posición original */
+    transform: translateY(0);
 }
 
+/* Estilos Responsivos del index */
+@media (max-width: 768px) {
+    .portada {
+        font-size: 40px; 
+        margin-bottom: 20px;
+    }
+    #inicio {
+        height: 400px; 
+        background-size: cover; 
+    }
+    #texto2, #texto {
+        font-size: 16px; 
+        padding: 0 20px; 
+    }
+    .titulo, .titulo2{
+        font-size: 30px; 
+    }
+    #blanco{
+        font-size: 50px; 
+    }
+    .boton {
+        padding: 8px 20px; 
+        font-size: 14px; 
+    }
+    .cajas {
+        align-items: center;
+    }
+    .cajas .box {
+        height: 160px;
+        width: 150px;
+        margin: 10px 5px;  
+    }
+    .cajas .box:nth-of-type(3) a {
+        margin-top: 30px; 
+    }
+    .cajas .box h3 {
+        font-size: 16px;
+    }
+    .box img{
+        width: 60px;
+    }
+    .info-imagen img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .info-lista {
+        font-size: 14px; 
+    }
+    .info-contenedor-blanco {
+        padding: 10px; 
+        max-width: 700px;
+        max-height: 465px;
+    }
+    .texto-intro, .texto-final {
+        font-size: 16px; 
+    }
+    .info-lista li {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+}
+/*----------------FIN DEL INDEX---------------------*/
 
-
-/* quienessomos*/
-
-
-/* Sección principal */
+/*----------------QUIENES SOMOS---------------------*/
 .about-us {
-    padding: 20px 40px; /* Espaciado interno */
-    background-color: #f3f3ea; /* Fondo claro */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 20px auto; /* Centrado horizontal */
-    max-width: 1300px; /* Ancho máximo */
-    text-align: center; /* Título centrado */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px 40px;
+    background-color: #f3f3ea;
+    border-radius: 10px; 
+    margin: 20px auto; 
+    max-width: 1300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
-
 .about-us h2 {
-    font-size: 30px; /* Tamaño del título */
-    color: #374738; /* Color del título */
-    margin-bottom: 20px; /* Separación del contenido */
+    font-size: 30px; 
+    color: #374738; 
+    margin-bottom: 20px; 
 }
-
 /* Contenido principal en flexbox */
 .about-us-content {
     display: flex;
-    justify-content: space-between; /* Texto e imagen separados */
-    align-items: flex-start; /* Alineación superior */
-    gap: 20px; /* Espacio entre elementos */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;
     margin-top: 20px;
 }
 
 /* Estilo del texto */
 .about-us-content p {
-    flex: 2; /* Ocupa más espacio que la imagen */
-    text-align: justify; /* Texto justificado */
-    font-size: 18px; /* Tamaño del texto */
-    line-height: 1.6; /* Altura de línea */
-    color: #222; /* Color del texto */
+    flex: 2; 
+    text-align: justify; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #222; 
 }
-
 /* Imagen alineada a la derecha */
 .about-us-image {
-    flex: 1; /* Imagen ocupa menos espacio */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center; 
+    align-items: center;
 }
-
 .about-us-image img {
-    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
-    height: auto; /* Mantener proporción */
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 /* Animación de scroll */
 .scroll-element {
     opacity: 0;
-    transform: translateY(50px); /* Inicialmente desplazado hacia abajo */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+    transform: translateY(50px); 
+    transition: opacity 0.6s ease, transform 0.6s ease; 
 }
-
 .scroll-element.visible {
     opacity: 1;
-    transform: translateY(0); /* Regresa a su posición original */
+    transform: translateY(0);
 }
-
-
 .team {
     background-color: #abd6ad;
     color: #f3f3ea;
     text-align: center;
-    padding: 10px 0px; /* Reduce el padding superior e inferior */
+    padding: 10px 0px; 
     border-radius: 10px;
     margin: 0;
-
 }
-
 .team h3 {
     font-size: 20px;
     color: #494949;
     padding-bottom: 0px;
 }
 .slider{
-    
     width: 100%;
     height: 500px;
     overflow: hidden;
@@ -939,22 +816,19 @@ section {
     animation: autoRun 25s linear infinite;
     transition: filter 0.5s;
     animation-delay: calc( (25s / var(--quantity)) * (var(--position) - 1) - 25s)!important;
-    
-    margin: 0; /* Asegúrate de que no haya márgenes */
-    padding: 0; /* Asegúrate de que no haya padding */
-    display: flex; /* Usar flex para centrar el contenido */
-    flex-direction: column; /* Alinear los elementos verticalmente */
-    justify-content: center; /* Centrar el contenido verticalmente */
-    align-items: center; /* Centrar el contenido horizontalmente */
-    
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 .slider .list .item img{
     width: 100%;
     border-radius: 10px;
-    height: auto; /* Asegúrate de que las imágenes se ajusten sin causar espacio extra */
-    display: block; /* Esto elimina el espacio en la parte inferior de las imágenes */
+    height: auto; 
+    display: block;
 }
-
 /* Oculta la leyenda de forma predeterminada */
 .slider .list .item .caption {
     display: none;
@@ -964,14 +838,12 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 5px;
     text-align: center;
     font-size: 0.9em;
 }
-
-/* Muestra la leyenda al pasar el ratón sobre el `.item` */
 .slider .list .item:hover .caption {
     display: block;
 }
@@ -999,9 +871,23 @@ section {
         left: 100%;
     }
 }
+/*---Responsive para quienes somos---*/
+@media screen and (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-image {
+        order: -1; 
+        margin-bottom: 20px;
+    }
+    .about-us-content p {
+        text-align: center;
+    }
+}
+/*----------------FIN DE QUIENES SOMOS---------------------*/
 
-/*actividades*/
-
+/*----------------ACTIVIDADES---------------------*/
 /* Hero Section */
 .hero-activity {
     background-color: #465947;
@@ -1032,7 +918,6 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .activities-history h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -1040,7 +925,6 @@ section {
     color: #465947;
     position: relative;
 }
-
 
 /* Actividad Individual */
 .activity {
@@ -1053,12 +937,10 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .activity:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 .activity-date {
     flex: 1;
     max-width: 150px;
@@ -1073,26 +955,22 @@ section {
     align-items: center;
     flex-direction: column;
 }
-
 .activity-content {
     flex: 4;
     padding-left: 20px;
     text-align: left;
 }
-
 .activity-content h3 {
     font-size: 1.5rem;
     color: #465947;
     margin-bottom: 10px;
 }
-
 .activity-content p {
     margin-bottom: 15px;
     font-size: 1rem;
     line-height: 1.6;
     color: #3f3b36;
 }
-
 .activity-content img {
     max-width: 30%;
     height: auto;
@@ -1100,35 +978,12 @@ section {
     margin: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .activity-content img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .activity {
-        flex-direction: column;
-    }
-
-    .activity-date {
-        max-width: 100%;
-        border-radius: 8px 8px 0 0;
-        margin-bottom: 15px;
-    }
-
-    .activity-content {
-        padding-left: 0;
-    }
-
-    .activity-content img {
-        max-width: 100%;
-    }
-}
-
 .modal {
-    display: none; /* Oculta el modal por defecto */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -1136,13 +991,12 @@ section {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
-    display: flex; /* Usamos flex para centrar */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    padding: 20px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
 }
-
 .modal-content {
     margin: auto;
     display: block;
@@ -1151,7 +1005,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 .close {
     position: absolute;
     top: 20px;
@@ -1162,48 +1015,51 @@ section {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
 }
-
 .button-container {
-    display: flex; /* Flexbox para centrar */
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 20px; /* Espaciado superior opcional */
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px; 
 }
-
 .download-button {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    background-color: #8bb28d; /* Color del botón */
-    color: white; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1rem; /* Tamaño de fuente */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave */
+    padding: 10px 20px; 
+    background-color: #8bb28d;
+    color: white; 
+    text-align: center; 
+    border: none; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
 }
-
 .download-button:hover {
-    background-color: #6fa26f; /* Cambiar color al pasar el ratón */
+    background-color: #6fa26f;
 }
 
+/*---Responsive para Actividades---*/
+@media (max-width: 768px) {
+    .activity {
+        flex-direction: column;
+    }
+    .activity-date {
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 15px;
+    }
+    .activity-content {
+        padding-left: 0;
+    }
+    .activity-content img {
+        max-width: 100%;
+    }
+}
+/*----------------FIN DE ACTIVIDADES---------------------*/
 
-
-
-
-
-
-
-
-
-
-/*contacto*/
-
-
+/*----------------CONTACTO---------------------*/
 .main {
     display:flex;
     justify-content: center;
@@ -1213,7 +1069,6 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
 }
-
 .contactoformulario{
     display:grid;
     grid-template-columns: repeat(2,50%);
@@ -1229,7 +1084,6 @@ section {
     flex-direction: column;
     gap:50px;
 }
-
 .box-info > h1 {
     text-align: left;
     letter-spacing: 5px;
@@ -1240,24 +1094,20 @@ section {
     flex-direction: column;
     gap:25px
 }
-
 .data > p {
     font-size: 1rem;
     text-align: left;
     color: #fdfcf7;
 }
-
 .data > p > i {
     color:#88b28a;
     margin-right: 10px;
     font-size:25px;
 }
-
 .links {
     display:flex;
     gap:15px;
 }
-
 .links > a {
     text-decoration: none;
     width: 40px;
@@ -1266,24 +1116,20 @@ section {
     text-align: center;
     transition: .1s;
 }
-
 .links > a > i {
     color:#fff;
     line-height: 40px;
     font-size: 20px;
 }
-
 form {
     display:flex;
     flex-direction: column;
     text-align: center;
     gap:15px;
 }
-
 .input-box {
     position:relative;
 }
-
 .input-box > input {
     width: 100%;
     height: 40px;
@@ -1294,26 +1140,20 @@ form {
     letter-spacing: 1px;
     transition:.3s;
     color:#fff;
-    
 }
-
 .input-box > input::placeholder,
 .input-box > textarea::placeholder {
     color:#a3a3a3;
-    
 }
-
 .input-box > input:focus::placeholder,
 .input-box > textarea:focus::placeholder {
     color:transparent;
 }
-
 .input-box > input:focus,
 .input-box > textarea:focus {
     border-bottom:3px solid #88b28a;
     animation: shake .2s;
 }
-
 .input-box > textarea {
     width: 100%;
     height: 130px;
@@ -1326,8 +1166,6 @@ form {
     color:#fff;
     letter-spacing: 1.5px;
 }
-
-
 .input-box > i {
     position:absolute;
     top:50%;
@@ -1336,11 +1174,9 @@ form {
     color:rgba(255 255 255 / .3);
     transition: .3s;
 }
-
 .input-box > input:focus ~ i {
     color:#88b28a;
 }
-
 form > button {
     width: 100%;
     padding: 10px;
@@ -1352,7 +1188,6 @@ form > button {
     cursor: pointer;
     font-size: 1rem;
 }
-
 form > button:hover,
 .links > a:hover {
     background: #7f7059;
@@ -1363,15 +1198,23 @@ form > button:hover,
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
  }
+
+/*---Responsive para Contacto---*/
  @media (max-width: 768px)  {
     .contactoformulario {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap:20px;
         height: 900px;
-    }
 
+    }
+    .input-box > input {
+        width: 98%;
+    }
+    .input-box > textarea {
+        width: 98%;
+    }
     .box-info {
         gap:15px;
     }
@@ -1386,37 +1229,32 @@ form > button:hover,
         text-align: center;
     }
     .links a{
-     margin: 0 30px;
+        align-items: center;
+        margin: 20px 20px;
     }
 }
+/*----------------FIN DE CONTACTO---------------------*/
 
-/*proyecto sanum*/
-/* Sección Introductoria */
-
-/* Fondo para la sección "Proyecto Sanum" */
+/*----------------PROYECTO SANUM---------------------*/
 .hero-project {
-    width: 100%; /* Ocupar todo el ancho */
-    padding: 15px 20px; /* Espaciado interno */
-
-    color: #ffffff; /* Texto en blanco */
-    text-align: center; /* Centrar contenido */
-    margin: 0; /* Sin margen */
-    position: relative; /* Asegurar posición */
-    border-bottom: 2px solid #555; /* Línea opcional para separar */
+    width: 100%; 
+    padding: 15px 20px; 
+    color: #ffffff; 
+    text-align: center; 
+    margin: 0;
+    position: relative; 
+    border-bottom: 2px solid #555;
     background: linear-gradient(135deg, #8bb28d, #7aa179);
 }
-
 .hero-project .hero-content {
-    max-width: 1200px; /* Limitar el ancho del contenido */
-    margin: 0 auto; /* Centrar contenido */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
-
 .hero-project h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
 .hero-project p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -1425,21 +1263,18 @@ form > button:hover,
     padding: 40px 20px;
     background-color: #f3f3ea;
     max-width: 1200px;
-    margin: 20px auto; /* Añadir espacio arriba y abajo */
+    margin: 20px auto; 
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #ddd;
 }
-
 .project-intro h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #3f3b36;
     position: relative;
 }
-
-
 .project-intro p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -1447,7 +1282,6 @@ form > button:hover,
     text-align: justify;
     margin-top: 10px;
 }
-
 .project-intro .intro-image {
     display: flex;
     justify-content: center;
@@ -1455,12 +1289,10 @@ form > button:hover,
 }
 
 .project-intro .intro-image img {
-    max-width: 90%; /* Reducir el tamaño para mayor equilibrio */
+    max-width: 90%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Objetivos del Proyecto */
 .project-goals {
     background-color: #f3f3ea;
     padding: 40px 20px;
@@ -1469,47 +1301,39 @@ form > button:hover,
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 .project-goals ul {
     list-style: none;
     padding: 0;
     margin: 20px auto;
     max-width: 800px;
 }
-
-
 .project-goals li {
     display: flex;
-    align-items: center; /* Asegura que los elementos estén alineados verticalmente */
+    align-items: center; 
     margin-bottom: 15px;
     font-size: 18px;
     color: #3f3b36;
-    gap: 10px; /* Reduce el espacio entre el icono y el texto */
+    gap: 10px;
 }
-
 .project-goals li i {
     color: #8bb28d;
     font-size: 24px;
-    flex-shrink: 0; /* Evita que el icono se reduzca */
+    flex-shrink: 0;
 }
 
 .project-goals li strong {
-    flex: 0 0 180px; /* Ancho fijo para los textos en negrita */
-    text-align: left; /* Alinea a la izquierda */
+    flex: 0 0 180px; 
+    text-align: left;
 }
-
 .project-goals li span {
-    flex: 1; /* El texto descriptivo toma el espacio restante */
-    text-align: left; /* Alinea el texto descriptivo a la izquierda */
+    flex: 1;
+    text-align: left;
 }
-
 .project-goals li i:hover {
     color: #6b9d74;
     transform: scale(1.1);
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
-/* Etapas del Proyecto */
 .project-stages {
     padding: 40px 20px;
     background-color: #f3f3ea;
@@ -1517,43 +1341,37 @@ form > button:hover,
     margin: 20px auto;
     border-radius: 12px;
 }
-
 .project-stages .stages {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Separación entre las etapas */
+    gap: 20px;
 }
-
 .project-stages .stage {
     background-color: #f4f4f4;
     padding: 20px;
     flex: 1;
-    min-width: 280px; /* Asegurar ancho mínimo */
+    min-width: 280px;
     max-width: 30%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-stages .stage h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #367f3b;
 }
-
 .project-stages .stage p {
     font-size: 1rem;
     color: #3f3b36;
     text-align: justify;
 }
-
 .project-stages .stage:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 /* Galería */
 .project-gallery {
     padding: 40px 20px;
@@ -1562,14 +1380,12 @@ form > button:hover,
     border-radius: 12px;
     margin: 20px auto;
 }
-
 .project-gallery .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .project-gallery .gallery img {
     width: 300px;
     height: 200px;
@@ -1577,37 +1393,29 @@ form > button:hover,
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-gallery .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
-
 /* Animaciones de Scroll */
 .scroll-element {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .scroll-element.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
+/*---Responsive de proyevto sanum---*/
 @media screen and (max-width: 768px) {
     .project-stages .stage {
-        margin-left: 80px;
-
-
+        margin-left: 66px;
     }
-    
 }
+/*----------------FIN DE PROYECTO SANUM---------------------*/
 
-
-
-/*Recetas*/
-/* Estilo del contenedor de recetas */
+/*----------------RECETAS---------------------*/
 .recetas-virales {
     text-align: center;
     background-color: #a6dbad;
@@ -1615,13 +1423,11 @@ form > button:hover,
     margin-bottom: 20px;
     border-bottom: 2px solid #ddd;
 }
-
 .recetas-virales h2 {
     font-size: 2.5rem;
     color: #465947;
     margin-bottom: 10px;
 }
-
 .recetas-virales p {
     font-size: 1.2rem;
     color: #3f3b36;
@@ -1629,47 +1435,40 @@ form > button:hover,
     max-width: 800px;
     line-height: 1.6;
 }
-
-
 .recetas-grid {
     display: grid;
     background-color: #f3f3ea;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espaciado entre las recetas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-    max-width: 1100px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar el main */
+    max-width: 1100px; 
+    margin: 0 auto;
 }
-
 /* Estilo de cada receta */
 .receta {
     position: relative;
     overflow: hidden;
-    border: 1px solid #000; /* Borde como en el diseño */
-    border-radius: 8px; /* Bordes redondeados opcionales */
+    border: 1px solid #000; 
+    border-radius: 8px;
     cursor: pointer;
 }
-
 /* Ajuste de las imágenes */
 .receta img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin deformarse */
-    aspect-ratio: 4 / 3; /* Proporción de la imagen */
-    transition: transform 0.3s ease; /* Efecto de hover */
+    object-fit: cover; 
+    aspect-ratio: 4 / 3; 
+    transition: transform 0.3s ease; 
 }
-
-/* Efecto hover en las imágenes */
 .receta:hover img {
-    transform: scale(1.1); /* Zoom al pasar el cursor */
+    transform: scale(1.1); 
 }
-
 /* Estilo del overlay (texto sobre la imagen) */
 .overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     font-size: 1.2rem;
@@ -1677,124 +1476,103 @@ form > button:hover,
     font-weight: bold;
     transition: opacity 0.3s ease;
 }
-
-/* Mostrar más claramente el overlay al hacer hover */
 .receta:hover .overlay {
     opacity: 1;
 }
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-    .recetas-grid {
-        max-width: 90%; /* Reducir el ancho en móviles */
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    }
-}
-
-@media (max-width: 480px) {
-    .recetas-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-    }
-}
-
-/* Contenedor principal de la receta expandida */
+/* Dentro de la receta */
 .receta-detalle {
-
-    max-width: 1000px; /* Ancho máximo */
-    margin: 40px auto; /* Centramos horizontalmente y añadimos margen superior/inferior */
-    padding: 20px; /* Espaciado interno */
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #ddd; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif; /* Fuente uniforme */
-    font-size: 1.2rem; /* Tamaño base para todo el texto */
-    line-height: 1.6; /* Espaciado uniforme entre líneas */
-    color: #333; /* Color uniforme */ /* Centrar texto dentro */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    color: #333; 
 }
-
-/* Imagen de la receta */
 .receta-detalle img {
     max-width: 350px;
     height: auto;
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 8px; /* Espaciado debajo de la imagen */
+    border-radius: 8px; 
+    margin-bottom: 8px; 
 }
-
-/* Títulos principales (título de la receta) */
 .receta-detalle h2 {
-    font-size: 2.5rem; /* Tamaño grande */
-    color: #333; /* Color oscuro */
-    margin-bottom: 10px; /* Espaciado debajo */
+    font-size: 2.5rem; 
+    color: #333;
+    margin-bottom: 10px; 
     font-weight: bold;
 }
-
-/* Subtítulos de secciones (Ingredientes, Preparación, Consejos) */
 .receta-detalle h3 {
-    font-size: 1.5rem; /* Tamaño medio */
-    color: #7f9c5f; /* Verde oscuro */
-    text-align: left; /* Alineado a la izquierda */
-    margin: 20px 0 10px; /* Espaciado arriba y abajo */
+    font-size: 1.5rem;
+    color: #7f9c5f; 
+    text-align: left; 
+    margin: 20px 0 10px;
     font-weight: bold;
-    border-bottom: 2px solid #ddd; /* Línea debajo */
-    padding-bottom: 5px; /* Espaciado debajo de la línea */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
-
-/* Listas de ingredientes y pasos */
 .receta-detalle ul, .receta-detalle ol {
-    text-align: left; /* Alineado a la izquierda */
-    padding-left: 20px; /* Espaciado a la izquierda */
+    text-align: left;
+    padding-left: 20px;
     margin: 10px 0 20px;
     font-size: 1rem;
     color: #333;
 }
-
-/* Elementos de lista */
 .receta-detalle ul li, .receta-detalle ol li {
-    margin-bottom: 8px; /* Espaciado entre elementos */
+    margin-bottom: 8px;
 }
-
-/* Texto para Consejos y Acompañamiento */
 .receta-detalle p {
-    font-size: 1.2rem; /* Mismo tamaño que el texto principal */
-    color: #555; /* Gris oscuro */
-    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
 }
-
-/* Destacar texto importante (Variante vegana) */
 .receta-detalle strong {
-    color: #7f9c5f; /* Verde oscuro */
+    color: #7f9c5f;
     font-weight: bold;
 }
-
-/* Botón "Volver" */
 .btn-volver {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7f9c5f; /* Verde oscuro */
+    background-color: #7f9c5f;
     color: white;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
 .btn-volver:hover {
-    background-color: #6b874e; /* Verde más oscuro */
+    background-color: #6b874e; 
 }
 
+/* Responsive recetas */
+@media (max-width: 768px) {
+    .recetas-grid {
+        max-width: 90%; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .receta-detalle img {
+        max-width: 250px;
+    }
+    .receta-detalle {
+        width: 300px; 
+        margin: 10px auto; 
+        padding: 5px;
+        font-size: 1rem;
+    }
+}
+/*----------------FIN DE RECETAS---------------------*/
 
-
-
-/*Servicios*/
-
+/*----------------SERVICIOS---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
@@ -1822,9 +1600,7 @@ form > button:hover,
     --item5-zIndex: 7;
     --item5-opacity: 0;
 }
-
-
-/* carousel */
+/* carrusel */
 .carousel{
     position: relative;
     height: 783px;
@@ -1863,7 +1639,6 @@ form > button:hover,
     transform: translateY(-50%);
     transition: right 1.5s;
 }
-
 .carousel .list .item .introduce{
     opacity: 0;
     pointer-events: none;
@@ -1927,7 +1702,7 @@ form > button:hover,
     opacity: var(--item5-opacity);
     pointer-events: none;
 }
-/* animation text in item2 */
+/* animacion de texto en el item 2 */
 .carousel .list .item:nth-child(2) .introduce .title,
 .carousel .list .item:nth-child(2) .introduce .topic,
 .carousel .list .item:nth-child(2) .introduce .des,
@@ -1995,7 +1770,7 @@ form > button:hover,
         opacity: var(--item5-opacity);
     }
 }
-/* previous */
+/* previo */
 .carousel.prev .list .item:nth-child(5){
     animation: transformFromPosition4 0.5s ease-in-out 1 forwards;
 }
@@ -2015,13 +1790,12 @@ form > button:hover,
         opacity: var(--item1-opacity);        
     }
 }
-
-/* detail  */
+/* detalle del item  */
 .carousel .list .item .detail{
     opacity: 0;
     pointer-events: none;
 }
-/* showDetail */
+/*mostrar el detalle */
 .carousel.showDetail .list .item:nth-child(3),
 .carousel.showDetail .list .item:nth-child(4){
     left: 100%;
@@ -2209,8 +1983,9 @@ form > button:hover,
         float: right;
     }
 }
-/*footer*/
+/*----------------FIN DE SERVICIOS---------------------*/
 
+/*----------------FOOTER---------------------*/
 footer {
     background-color: #625b51;
     color: #fff;
@@ -2220,3 +1995,5 @@ footer {
 footer p{
     color: #fff;
 }
+/*----------------FIN DEL FOOTER---------------------*/
+
