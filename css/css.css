@@ -1561,7 +1561,7 @@ form > button:hover,
         grid-template-columns: repeat(2, 1fr); 
     }
     .receta-detalle img {
-        max-width: 250px;
+        max-width: 220px;
     }
     .receta-detalle {
         width: 100%; 
@@ -1995,7 +1995,7 @@ form > button:hover,
         display: flex;
         gap: 17px;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail .specifications div{
         width: 30px;
