@@ -1230,7 +1230,7 @@ form > button:hover,
     }
     .links a{
         align-items: center;
-        margin: 20px 15px;
+        margin: 20px 10px;
     }
 }
 /*----------------FIN DE CONTACTO---------------------*/
@@ -1564,10 +1564,13 @@ form > button:hover,
         max-width: 250px;
     }
     .receta-detalle {
-        width: 300px; 
-        margin: 10px auto; 
+        width: 100%; 
+        margin: 10px 0px; 
         padding: 5px;
         font-size: 1rem;
+    }
+    .overlay {
+        font-size: 8px;
     }
 }
 /*----------------FIN DE RECETAS---------------------*/
